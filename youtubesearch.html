@@ -1,0 +1,42 @@
+<html lang='en'>
+  <title> youtube search tool</title>
+  <head>
+    <script>
+      function youtubesearch() { 
+      var usersearch = document.getElementById("search");
+      window.open("http://www.youtube.com/results?search_query=" + usersearch.value + "&page=1");
+      console.log(document.cookie());
+      if(usersearch.value == "") {
+      alert("nothing to search");
+      }
+      }
+    </script>
+     <style>
+     body
+     {
+     background-color:grey;
+        
+     } 
+     header
+     {
+     background-color:red;
+     border-radius:8px;
+     box-shadow:1px 4px 4px 1px;
+     }
+     #search
+     {
+      border-radius:8px;
+      
+
+     }
+     </style>  
+  </head>
+  <body>
+    <header>
+      <h1>youtube search tool</h1>
+    </header>
+    <input id="search" type="text"></input>
+    <button type="button" onclick="youtubesearch();">go!</button>
+  </body>
+  </html>
+  
