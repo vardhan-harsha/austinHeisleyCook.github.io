@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html>
+<title>guess wizard.com</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<head>
+<meta name="viewport" content="width=device-width height=device-height"> 
+  <style>
+    
+    button{border-radius:12px; margin:0 12px;}
+    label{color:darkgray;}
+    body{background-color:#fce;}
+    button:active{box-shadow:-1px -2px -2px -1px;}
+    input{border-radius:9px; margin:1 12px;}
+    }
+    
+    header
+    {
+    width:17cm;
+    margin-top:-3px;
+    border-radius:9px;
+    background-color:rgb(232,12,14);
+    box-shadow:1px 4px 4px 1px;
+
+    }
+    h1
+    {
+    margin:-3 30px; 
+    background-color:rgb(232,12,14);
+    color:rgb(22,12,2);
+    font-family:mv boli; 
+     box-shadow:1px 4px 4px 1px;
+     border-radius:9px;
+    }
+    img
+    {
+    opacity:1.0;
+    }
+    p
+    {
+    font-family:Arial:
+    margin:4px 34px;
+    }
+
+    span a{
+background-color:red;
+border-radius:4px;
+}
+   </style> 
+  <script>
+    function engine() {
+   
+    var playername = document.getElementById("playername");
+    var guess = document.getElementById("userguests");
+    var answer = Math.floor((Math.random() * 100) + 1);
+    if(userguess.value == answer) {
+
+    alert("that is the correct answer" + playername.value  + "!");
+    document.write("<img src='http://www.picgifs.com/graphics/f/fireworks/graphics-fireworks-158568.gif'>")
+    location.reload()
+    
+    }
+    else
+    {
+    alert("nice try" + "" + playername.value + ""  + "!" + "the  number was" + answer );
+    document.write("<img src='http://previews.123rf.com/images/ddmhzr/ddmhzr1002/ddmhzr100200116/8055910-Smiley-Stock-Vector-smiley-face-sad.jpg' width='490' height='540'  >")
+ 
+    location.reload();
+    
+    }
+    if(answer > userguess.value) {
+		alert("that guess is too low");
+    
+		}
+		if(answer < userguess.value) {
+                alert("that guess is too high");
+      }
+    }
+    
+  </script>
+  
+</head>
+
+<body>
+  <header>
+
+  <h1>welcome to the guesswizard</h1>
+  </header>
+ <div id="inputinterface"> 
+  <label for="userguess">input your guess</label>
+  <input id="userguess" type="text">
+  <label for="playername">input your name</label>
+  <input id="playername" type="text">
+  <button type="button" onclick="javascript:engine();">submit your guess</button   <div align="center">
+ </div>
+  										   
+										
+<p><B>guess wizard rules:</B> to win you must guess the number  between 1 to 100. </p><br><p>the messages will tell if your too low or too high.</p>								   <img src="guesswizardlogo.png"/>					   </div>
+
+<span><a href="http://mygamesite.netai.net/homesite/main.html">click here to go to my bussines</a></span>
+
+</body>  
+</html>  
+
+  
+<!-- START OF HIT COUNTER CODE --><br><script language="JavaScript" src="http://www.counter160.com/js.js?img=8"></script><br><a href="https://www.000webhost.com"><img src="http://www.counter160.com/images/8/left.png" alt="Free web hosting" border="0" align="texttop"></a><a href="http://www.hosting24.com"><img alt="Web hosting" src="http://www.counter160.com/images/8/right.png" border="0" align="texttop"></a><!-- END OF HIT COUNTER CODE -->
+
+
+<!-- Hosting24 Analytics Code -->
+<script type="text/javascript" src="http://stats.hosting24.com/count.php"></script>
+<!-- End Of Analytics Code -->
