@@ -1,4 +1,6 @@
 #Make sure to make a directory to send the transcriptions
+#create the transcriptions directory on your machine 
+#make sure you have cmusphinx working and the speechrecogniton module installed
 import speech_recognition as sr
 import os
 # obtain audio from the microphone
