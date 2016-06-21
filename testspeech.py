@@ -7,7 +7,7 @@ with sr.Microphone() as source:
     audio = r.listen(source)
 text = r.recognize_sphinx(audio)
 os.system("cd transcriptions")
-s = open("spoketext.docx", "w")
-r = open("spoketext.docx", "r")
+s = open("spokentext.docx", "w")
+r = open("spokentext.docx", "r")
 s.write(text)
 
