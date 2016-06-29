@@ -6,6 +6,8 @@
 <head>
 <link rel="shortcut icon" href="favicon.ico">
 
+
+
 <style>
 
 
@@ -65,7 +67,20 @@ background-color:#fa5;
 text-decoration:none;
 }
 
-
+            button
+{	
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+border-right:1px solid black;
+font-weight:bold;
+}
+#search
+{
+border-top-left-radius:8px;	
+border-bottom-left-radius:8px;
+border-bottom:grey;
+border-lsft:solid 1px black;
+}
 
 ion-content p{
   top:40px;
@@ -74,6 +89,13 @@ ion-content p{
 }
 
 </style>
+
+    <script>
+function mysearch() {
+ var searchquery = document.getElementById("search");	
+window.open("http://www.google.com/search?q=" + searchquery.value + "austin Heisley-Cook" +  "&page=1" );
+}	
+</script>
     
 </head>        
 
@@ -83,7 +105,8 @@ ion-content p{
 <h1>Welcome to my page</h1>
     
 </header>     
-
+    <input id="search" type="text" name="search me"></text>
+<button type="button" onclick="mysearch();">go!</button>
 <nav>
 
 <ul>
