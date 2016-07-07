@@ -144,7 +144,9 @@ window.open("http://www.google.com/search?q=" + "austin heisley-cook " + searchq
 <script>
 function timeadd() {
 var d = new Date();
+document.open();
 document.write("<span>" + d + "</span>");
+document.close();
 }
 setInterval(timeadd, 1000);
 </script>
