@@ -1,15 +1,26 @@
-<!doctype html>
+
+<!doctype htmt>
 <html>
     
 <title>technowiz's page of things</title>
     
 <head>
-<meta keyword="biopage"/>
 <link rel="shortcut icon" href="favicon.ico">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
 
+<script>
+$(document).ready(function() {
+
+$("#myimage").fadeOut(1100);    
+$("#myimage").fadeIn(1100);
+$("p").css("margin", "20px 10px")
+});
+</script>
 <style>
+
+
 
  footer 
 {
@@ -22,12 +33,6 @@ color:#ffff00;
 clear:both;
 height:50px;
 position:relative;
-}
-
-span{
-position:relative;
-left:230px;
-font-family:Impact;    
 }
   
 body
@@ -81,6 +86,7 @@ font-weight:bold;
 position:relative;
 left:500px;
 top:-40px;
+height:25;
 }
 #search
 {
@@ -116,7 +122,7 @@ window.open("http://www.google.com/search?q=" + "austin heisley-cook " + searchq
 <header>
 <h1>Welcome to my page</h1>
     <input id="search" type="text"></text>
-<button type="button" onclick="mysearch();">go!</button>    
+<button type="button" onclick="mysearch();">searchme</button>    
 </header>     
 
 <nav>
@@ -141,15 +147,6 @@ window.open("http://www.google.com/search?q=" + "austin heisley-cook " + searchq
 
 <footer>
 &copyopyright by:austin heisley-cook 2016
-<script>
-function timeadd() {
-var d = new Date();
-document.open();
-document.write("<span>" + d + "</span>");
-document.close();
-}
-timeadd();
-</script>
 </footer>    
     
 </body>    
