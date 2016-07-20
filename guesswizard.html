@@ -51,7 +51,7 @@ border-radius:4px;
    
   <script>
     function engine() {
-    var playerscore = guess - answer;
+    var playerscore = userguess.value - answer;
     var playername = document.getElementById("playername");
     var guess = document.getElementById("userguests");
     var answer = Math.floor((Math.random() * 100) + 1);
