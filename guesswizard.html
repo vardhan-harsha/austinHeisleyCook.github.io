@@ -53,14 +53,14 @@ border-radius:4px;
     function engine() {
     var playerscore = userguess.value - answer;
     var playername = document.getElementById("playername");
-    var guess = document.getElementById("userguests");
+    var guess = document.getElementById("userguess");
     var answer = Math.floor((Math.random() * 100) + 1);
     if(userguess.value == answer) {
 
     alert("that is the correct answer" + playername.value  + "!");
     document.write("<img src='http://www.picgifs.com/graphics/f/fireworks/graphics-fireworks-158568.gif' width='100' height='100' >");
     alert(playerscore);
-    location.reload()
+    location.reload();
     
     
     }
