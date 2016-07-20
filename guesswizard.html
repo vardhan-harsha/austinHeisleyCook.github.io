@@ -46,27 +46,30 @@
 background-color:red;
 border-radius:4px;
 }
-   </style> 
+   </style>
+   
+   
   <script>
     function engine() {
-   
+    var playerscore = guess - answer;
     var playername = document.getElementById("playername");
     var guess = document.getElementById("userguests");
     var answer = Math.floor((Math.random() * 100) + 1);
     if(userguess.value == answer) {
 
     alert("that is the correct answer" + playername.value  + "!");
-    document.write("<img src='http://www.picgifs.com/graphics/f/fireworks/graphics-fireworks-158568.gif'>")
+    document.write("<img src='http://www.picgifs.com/graphics/f/fireworks/graphics-fireworks-158568.gif' width='100' height='100' >");
+    alert(playerscore);
     location.reload()
+    
     
     }
     else
     {
     alert("nice try" + "" + playername.value + ""  + "!" + "the  number was" + answer );
-    document.write("<img src='http://previews.123rf.com/images/ddmhzr/ddmhzr1002/ddmhzr100200116/8055910-Smiley-Stock-Vector-smiley-face-sad.jpg' width='490' height='540'  >")
- 
+    document.write("<img src='http://previews.123rf.com/images/ddmhzr/ddmhzr1002/ddmhzr100200116/8055910-Smiley-Stock-Vector-smiley-face-sad.jpg' width='100' height='100'  >");
+    alert(playerscore);
     location.reload();
-    
     }
     if(answer > userguess.value) {
 		alert("that guess is too low");
