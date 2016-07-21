@@ -4,17 +4,20 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-  
     return render_template('index.html')
 
 @app.route('/aboutme')
 def about():
   return render_template('/')
-@a
-def blog():
-  return render_template('/blog')
 
-@app.route
+@app.route('/blog')
+def blog():
+  return render_template('blog.html')
+
+@app.route('/jquerytest')
+
+def jquerytest():
+    return render_template('jquerytester.html')
 
 
 if __name__ == '__main__':
