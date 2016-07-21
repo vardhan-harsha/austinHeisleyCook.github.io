@@ -9,11 +9,12 @@ def index():
 
 @app.route('/aboutme')
 def about():
-  return render_template('about.html')
-@app.route('/blog')
+  return render_template('/')
+@a
 def blog():
-  return render_template('blog.html')
+  return render_template('/blog')
 
+@app.route
 
 
 if __name__ == '__main__':
