@@ -12,10 +12,10 @@
 
 <script>
 $(document).ready(function() {
-
-$("#myimage").fadeOut(1100);    
-$("#myimage").fadeIn(1100);
-$("p").css("margin", "20px 10px")
+$("#myimage").css("position", "relative");
+$("#myimage").animate({left:"+=100px"}, 'fast');
+$("#myimage").animate({left:"-=100px"}, 'fast');
+$("p").css("margin", "20px 10px");
 });
 $("a").mouseenter(function() {
  $("a").show();
