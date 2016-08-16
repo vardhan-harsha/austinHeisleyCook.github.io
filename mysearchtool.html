@@ -12,7 +12,7 @@ $(document).ready(function() {
  var searchquery =  $("#search").val();	
 window.open("http://www.google.com/search?q=" + searchquery + "&page=1" );
 });
-$("#search").keypress(function( event ) {
+$(document).keypress(function( event ) {
 if(event.which == 13) {
  var searchquery =  $("#search").val();		
  window.open("http://www.google.com/search?q=" + searchquery + "&page=1" );    
