@@ -4,7 +4,7 @@
     <script>
       function youtubesearch() { 
       var usersearch = document.getElementById("search");
-      window.open("http://www.youtube.com/results?search_query=" + usersearch.value + "&page=1");
+      window.open("http://www.youtube.com/results?search_query=" + usersearch.value + "&page=1" + "" );
       console.log(document.cookie());
       if(usersearch.value == "") {
       alert("nothing to search");
@@ -26,8 +26,12 @@
      #search
      {
       border-radius:8px;
-      
-
+     }
+     footer
+     {
+     background-color:red;
+     border-radius:8px;
+     box-shadow:1px 4px 4px 1px;
      }
      </style>  
   </head>
@@ -37,6 +41,9 @@
     </header>
     <input id="search" type="text"></input>
     <button type="button" onclick="youtubesearch();">go!</button>
+    <footer>
+    created by austin  
+    </footer>
   </body>
   </html>
   
