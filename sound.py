@@ -3,7 +3,6 @@ import winsound
 y = 330
 x = 1
 z = 230
-audio = open("song.mp3", "w")
 endloop = 10
 while x <= endloop:
  winsound.Beep(130, 210)
