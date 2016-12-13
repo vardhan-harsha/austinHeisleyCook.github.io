@@ -4,7 +4,13 @@
 <style>
 
 </style>
-<script?
+<script>
+ var divide = function() {
+ var num1 = document.getElementById("num1");
+ var num2 = document.GetElementById("num2");
+ alert(num1.val / num2.val);
+ }
+  </script>  
 </head>
 
 <body>
@@ -13,7 +19,8 @@
 <label for='number1'>number1</label>
 <input id="num1">
 <label for='number2'>number2</label>
-<button>calculate</button>
+<input id="num2">  
+<button onclick="divide();">calculate</button>
 <footer>
 </footer>
 </body>
