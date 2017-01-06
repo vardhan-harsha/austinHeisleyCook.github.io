@@ -1,0 +1,6 @@
+			guesswizard scoreboard
+
+  
+	 playername:austin
+	 score: -1
+	 lives left:0
