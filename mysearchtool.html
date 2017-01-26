@@ -8,16 +8,22 @@
 <script>
 
 function mysearch() {
-$(document).ready(function() {    
- var searchquery =  $("#search").val();	
-window.open("http://www.google.com/search?q=" + searchquery + "&page=1" );
-
+$(document).ready(function() {
+var searchquery = $("#search").val();		
+if(searchquery == "") {	    
+alert("invalid search query: no text has been typed");
+location.reload();
+}
+else {
+window.open("http://www.google.com/search?q=" + searchquery + "&page=1" );	
+}	
+});	
+	
 $(document).keypress(function( event ) {
 if(event.which == 13) {
  var searchquery =  $("#search").val();		
  window.open("http://www.google.com/search?q=" + searchquery + "&page=1" );    
 }
-});
 });
 }
 
