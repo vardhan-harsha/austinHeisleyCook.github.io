@@ -1,0 +1,46 @@
+from random import *
+import pygame, sys
+from pygame.locals import *
+pygame.init()
+DISPLAYSURF = pygame.display.set_mode((400, 300))
+a = 111
+l = 233
+c = 232
+color = (123,100,67)
+mycolor = (l,c,a)
+x = randint(24, 100)
+y = randint(20, 300)
+width = randint(1, 100)
+height = randint(1, 100) 
+myrect = pygame.Rect(x,y,width,height)
+pygame.display.set_caption('animation')
+while True:
+ DISPLAYSURF.fill(color)
+ pygame.draw.rect(DISPLAYSURF, mycolor, (x,y,width,height))
+ print("\npostionX: " + str(x) + "\npostiony: " + str(y) + "\n" + "rectheight: " + str(height) + "\n rectwidth: " + str(width) + "\n" )
+ 
+ y=y+randint(1, 10)
+ x=x+randint(1, 10)
+ width=width+randint(1, 100)
+ height=height+randint(1,100)
+ a=a+1
+ l=l+1
+ c=c+1
+  
+ if x >= 380:
+	 x = 1
+	 
+ if x == 1:
+	 y=y-1 
+	 x=x-1
+	 
+
+	   	  
+ if y >= 200:
+	 y = 24  	 
+ for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+            sys.exit()
+            
+ pygame.display.update()       
