@@ -5,6 +5,10 @@
 header{
 background-color:#fc4;
 }
+h1
+{
+background-color:#fc3;
+}
 footer
 {
 background-color:#fc4;
@@ -17,12 +21,39 @@ background-color:#fa4;
 
 </style>
 <script>
-function subtract() {
+function calculate() {
 var num1 = document.getElementById("num1");
+var op = document.getElementById("operator")  
 var num2 = document.getElementById("num2");
-var total = num1.value - num2.value;
+var result;
 
-document.write("<body style='background-color:black;  '>  <textarea  style=' width:50px; height:40px; position:relative; top:100px;   left:300px; background-color:white; border:solid 4px black; color:red;'> " + total +  "</textarea></body>");
+if(op.value == "+") {
+result = num1.value++ +  num2.value++;  
+  
+}  
+
+if(op.value == "-") {
+result = num1.value - num2.value;  
+  
+}  
+
+if(op.value == "*") {
+result = num1.value * num2.value;  
+  
+}  
+
+if(op.value == "/") {
+result = num1.value / num2.value; 
+  
+}  
+  
+if(op.value == "**") {
+result = num1.value ** num2.value; 
+  
+}  
+  
+  
+document.write("<body style='background-color:black;  '>  <textarea  style=' width:100px; height:100px; position:relative; top:100px;   left:300px; background-color:white; border:solid 4px black; color:red;'> " + result +  "</textarea></body>");
 }
 </script>
 </head>
@@ -33,12 +64,17 @@ document.write("<body style='background-color:black;  '>  <textarea  style=' wid
 <h1>subtraction calculator</h1>
 <label for='first'>first</label>
 <br>
+<br>  
 <input type="text" id="num1">
+ <br> 
+<label for='operator'>operator</label>
+<br>
+<input id="operator" type="text">   
 <br>
 <label for="second">second</label>
 </br>
 <input type="text" id="num2">
-<button onclick="subtract();">start</button>
+<button onclick="calculate();">start</button>
 </header>
 <footer>
 </footer>
