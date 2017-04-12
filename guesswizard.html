@@ -91,14 +91,12 @@ border-radius:4px;
   <h1>welcome to the guesswizard</h1>
   </header>
  <div id="inputinterface"> 
-  <label for="playername">input your name</label>
+  <label for="playername">input your name <input id="playername" value="yourname"></label>
+ 
   <br>	 
-  <input id="playername" value="yourname">
-  <br>	 
-  <label for="userguess">input your guess</label>
-  <br>	 
-  <input id="userguess" type="text" value="numbers only">	 
-  <br>
+  <label for="userguess">input your guess<input id="userguess" type="text" value="numbers only"></label>
+  
+	 
 
 	 <button type="button" onclick="javascript:engine();">submit your guess</button>   
 	
