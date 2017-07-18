@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{B8CED514-BECD-4D6C-9355-1DDC64F7D0A8}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="xfadas\Program.cs">
+    <Files>
+      <File FileName="xfadas\Program.cs" Line="3" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.xfadas PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
