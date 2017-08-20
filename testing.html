@@ -1,0 +1,37 @@
+<strong style="font-size:30;">skillset</strong>
+<h3>skills:</h3>
+
+
+<input id="add" type="text">
+<button onclick="add();">add to list</button> 
+<button onclick="show();">show</button>
+<button onclick="remove();">remove</button>
+
+<script>
+list = ["red","green","blue"];
+function show() {
+for(var i = 0;i < list.length; i++) {
+    var li = document.createElement("li");        // Create a <button> element
+var t = document.createTextNode(list[i]);       // Create a text node
+li.appendChild(t);                                // Append the text to <button>
+document.body.appendChild(li);  
+}
+}
+
+
+function add() {
+useradd = document.getElementById("add");
+list.push(useradd.value);
+
+}
+
+
+function remove() {
+list.pop()
+}
+
+
+</script>
+
+
+
